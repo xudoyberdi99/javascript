@@ -25,3 +25,7 @@ function mukammalSon(n) {
 // 	}
 // 	console.log(a)
 // }
+
+const mas = ['str', 'str1', 'ol', 'str3', 'olma', 'str2']
+
+console.log(mas[Math.floor(Math.random() * mas.length)])
