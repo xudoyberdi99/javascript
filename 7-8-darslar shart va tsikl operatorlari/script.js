@@ -16,3 +16,18 @@ if (numberOfSeries < 5) {
 } else {
 	alert('sizdan zuri yuq')
 }
+
+let randastur = [
+	' ',
+	'Java',
+	'rus tili',
+	'kino',
+	'rus tilida kino',
+	'kitob uqish',
+	'javascript',
+	' ',
+]
+
+let a = randastur[Math.floor(Math.random() * randastur.length)]
+
+console.log(a)
