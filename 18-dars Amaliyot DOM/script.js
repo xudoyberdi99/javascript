@@ -26,3 +26,35 @@ serialArr.forEach((item, index) => {
 	</li>
 	`
 })
+
+//5-topshiriq
+const inputValue = document.querySelector('.adding__input')
+addEventListener('submit', e => {
+	e.preventDefault()
+	const newItem = inputValue.value.trim()
+	const check = document.getElementById('favorite')
+
+	if (newItem) {
+		serialArr.push(newItem)
+		series.innerHTML += `
+	<li class="promo__interactive-item">
+		${serialArr.length}. ${newItem}
+		<div class="delete"></div>
+	</li>
+	`
+	}
+	if (check) {
+		console.log(`Siz ${newItem} serialini sevasiz`)
+	}
+	inputValue.value = ''
+})
+
+//6-topshiriq
+series.addEventListener('click', e => {
+	if (e.target.classList.contains('delete')) {
+		const item = e.target.parentElement
+		const index = Array.from(series.children).indexOf(item)
+		serialArr.splice(index, 1)
+		item.remove()
+	}
+})
