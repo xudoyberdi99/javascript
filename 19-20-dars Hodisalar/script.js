@@ -1,1 +1,1 @@
- 
+// darsda qushib bajarildi
