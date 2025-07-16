@@ -1,0 +1,16 @@
+{
+	"name": "37-dars-npm-eslint-json-server",
+	"version": "1.0.0",
+	"main": "script.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Xudoyberdi Norboyev",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@eslint/js": "^9.31.0",
+		"eslint": "^9.31.0",
+		"globals": "^16.3.0"
+	}
+}
